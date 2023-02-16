@@ -70,6 +70,6 @@ for nonterminal in grammar:
 for nonterminal in grammar:
     first_set = ' | '.join(sorted(first[nonterminal]))
     follow_set = ' | '.join(sorted(follow[nonterminal] | {'$'}))
-    print(f'First({nonterminal}) = {first_set}')
-    print(f'Follow({nonterminal}) = {follow_set}')
+    print(f'First({nonterminal}) = { {first_set} }')
+    print(f'Follow({nonterminal}) = { {follow_set} }')
     print('----------------------------------------')
